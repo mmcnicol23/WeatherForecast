@@ -12,7 +12,10 @@ class Program
     {
         var client = new HttpClient();
         var city = "Flint";
-
+        
+        var appSettingsText = File.ReadAllText("appsettings.json");
+        var key = JObject.Parse(appSettingsText).GetValue("apikey").ToString();
+        
         var weatherURL =
             $"https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={key}&units=imperial";
         var response = client.GetStringAsync(weatherURL).Result;

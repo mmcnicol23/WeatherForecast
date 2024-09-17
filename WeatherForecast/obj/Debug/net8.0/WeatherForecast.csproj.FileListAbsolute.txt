@@ -16,3 +16,4 @@ C:\Users\Maria\Desktop\Repos\WeatherForecast\WeatherForecast\obj\Debug\net8.0\re
 C:\Users\Maria\Desktop\Repos\WeatherForecast\WeatherForecast\obj\Debug\net8.0\WeatherForecast.pdb
 C:\Users\Maria\Desktop\Repos\WeatherForecast\WeatherForecast\obj\Debug\net8.0\WeatherForecast.genruntimeconfig.cache
 C:\Users\Maria\Desktop\Repos\WeatherForecast\WeatherForecast\obj\Debug\net8.0\ref\WeatherForecast.dll
+C:\Users\Maria\Desktop\Repos\WeatherForecast\WeatherForecast\bin\Debug\net8.0\appsettings.json
