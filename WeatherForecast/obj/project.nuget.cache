@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H597QdD/oZAU891jPxEJGxnfnBMkpG5iAMQiPwWtgKp564x2AAEbb16azolj2UlDVcpvet35JDlOB8Z7p/mxUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maria\\Desktop\\Repos\\WeatherForecast\\WeatherForecast\\WeatherForecast.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maria\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
