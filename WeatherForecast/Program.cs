@@ -11,7 +11,6 @@ class Program
     static void Main(string[] args)
     {
         var client = new HttpClient();
-        var key = "a3b0c397670f5e101eb6ae7314e1faab";
         var city = "Flint";
 
         var weatherURL =
