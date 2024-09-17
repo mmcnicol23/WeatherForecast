@@ -1,23 +1,25 @@
-﻿namespace WeatherForecast;
-// Exercise 2:
-// Use the OpenWeatherMap API to find out what the current weather forecast is!
-//
-// Create an OpenWeatherMap account to get a free API Key
-//
-// Add the NewtonSoft.Json Nuget Package to your Console App
-//
-// Figure out how to get the CURRENT weather for the City you specify in degrees fahrenheit
-//
-// Use this site for extra help: https://openweathermap.org/current
-//
-// Creatively display & organize the response
-//
-// Hint: For more info on Units of Measurement visit: https://openweathermap.org/current#data
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
+namespace WeatherForecast;
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var client = new HttpClient();
+        var key = "a3b0c397670f5e101eb6ae7314e1faab";
+        var city = "Flint";
+
+        var weatherURL =
+            $"https://api.openweathermap.org/data/2.5/forecast?q={city}&appid={key}&units=imperial";
+        var response = client.GetStringAsync(weatherURL).Result;
+
+        JObject formattedResponse = JObject.Parse(response);
+        var temp = formattedResponse["list"][0]["main"]["temp"];
+        Console.WriteLine($"The current temperature for {city} is: {temp} F");
     }
 }
